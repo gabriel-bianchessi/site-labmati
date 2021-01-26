@@ -1,0 +1,91 @@
+:root {
+  font-size: 16px;
+  --button-primary: #fa8231;
+  --button-secondary: #8854d0;
+  --button-secondary2: #a55eea;
+  --button-tertiary: #20bf6b;
+  --gray-text-bg: #393939;
+  --menu-color: #1d1d1d;
+  --white-text-bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--menu-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--button-secondary);
+}
+
+main {
+  margin-left: 5rem;
+}
+
+.navbar {
+ width: 5rem;
+ height: 100vh;
+ position: fixed;
+
+ background-color: var(--menu-color);
+}
+
+.init {
+  width: math(100% - 5rem);
+  height:100vh;
+
+  padding: 1rem;
+  background-color: var(--gray-text-bg);
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: "intro terminal" "sigla terminal" "buttons terminal";
+}
+
+.init>h1{
+  font-size: 9rem;
+  font-family:"Arial";
+  color: var(--white-text-bg);  
+  grid-area: intro; 
+}
+
+.init>h4{
+  font-size: 1.5rem;
+  color:var(--white-text-bg);
+  grid-area: sigla;  
+}
+
+.buttons-init {
+  grid-area: buttons;
+}
+
+.terminal {
+  grid-area: terminal;
+}
+
+.init>div>button{
+  border-radius: 10rem;
+	background-color: transparent;
+	width:9em;
+  height:4.5rem;
+  font-size: 2rem;
+  color: var(--white-text-bg);
+}
+
+.sobre-bt{
+  border-color: var(--button-primary);
+}
+
+.projeto-bt {
+  border-color: var(--button-secondary);
+}
+
