@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;800&display=swap" rel="stylesheet">
   <title>LabMat(i)²</title>
 </head>
 <body>
@@ -14,8 +16,10 @@
 
     <!--Parte inicial-->
     <div class="init">
-      <h1 id="lab">LabMat(i)²</h1>
-      <h4 id="sigla">Laboratorio Multidisciplinar Avançado de Tecnologia da Informação e Inovação</h4>
+      <div class="text-init">
+        <h1 id="lab">LabMat(i)²</h1>
+        <h4 id="sigla">Laboratorio Multidisciplinar Avançado de Tecnologia da Informação e Inovação</h4>
+      </div>
       <div class="buttons-init">
         <button class="sobre-bt">Sobre Nós</button>
         <button class="projeto-bt">Projetos</button>
@@ -23,19 +27,20 @@
       <div class="terminal">Terminal</div>
     </div>
 
-    <!--Bola com os links
-    <div class="link-ball">
-      <div class="Bola"></div>
-      <button class="sobre_menu"></button>
-      <button class="projetos_menu"></button>
-      <button class=""></button>
-    </div>-->
-
     <!--Sobre o LabMatii-->
-    <div class="about">
-      <h2><b> Sobre Nós</h2>
-      <h4><p>Texto 1</p>
-      <p>Texto 2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates distinctio dicta molestias obcaecati mollitia sed neque adipisci animi exercitationem. Eius rerum ut eum. Aperiam labore, perferendis beatae repellendus ipsum libero!</p></h4>
+    <div class="about" id="about">
+      <h2><img src="assets/Aberto.png">SOBRE NÓS<img src="assets/Fechado.png"></h2>
+      <p>O Laboratório Multidisciplinar Avançado de Tecnologia da Informação e Inovação (LabMat(i)²) é
+        um dos lugares dentro do Instituto Federal Catarinense - Campus Camboriú que fornece suporte
+        ao curso de Técnico em Informática do Campus desde 2003. O objetivo principal do laboratório
+        é agremiar alunos interessados nas áreas das ciências da informação, fornecendo suporte para o
+        desenvolvimento de projetos de pesquisa, ensino e extensão. </p>
+      <p>Sob direção do Professor Eng. José Luiz Ungericht Júnior, o LabMat(i)² tem como filosofia
+        auxiliar e agremiar os mais brilhantes alunos, no intuito de desenvolver as suas capacidades de
+        decisões, lideranças e conhecimentos técnicos. Além do viés de produção de conteúdo, como
+        projetos de pesquisa, o laboratório funciona como o cotidiano de uma empresa, com hierarquia,
+        departamentos e prazos, com o intuito de situar o estagiário em situações reais do mercado de
+        trabalho.</p>
     </div>
 
     <!--Projetos do LabMatii-->
@@ -62,7 +67,25 @@
     </div>
 
     <!--Área das informações de contato-->
-    <div class="contact"></div>
+    <div class="contact">
+
+      <div class="social-media"></div>
+      
+      <div class="contact-form">
+        <form name="contact">
+          <h1>CONTATO</h1>
+          
+          <input type="text" id="nomeid" placeholder="Nome" required="required" name="nome" />
+      
+          <input type="email" id="emailid" placeholder="Email" name="email" />
+          
+          <textarea placeholder="Mensagem"></textarea>
+          
+          <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        </form>
+      </div>
+
+    </div>
     
     <!--Rodapé-->
     <div class="footer"></div>
