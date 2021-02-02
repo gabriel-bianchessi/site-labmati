@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css" type="text/css">
-  <title>LabMat(i)<sup>2</sup></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;800&display=swap" rel="stylesheet">
+  <title>LabMat(i)²</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <!--Menu lateral do site-->
+  <nav class="navbar">
+  </nav>
+  <main>
+
+    <!--Parte inicial-->
+    <div class="init">
+      <div class="text-init">
+        <h1 id="lab">LabMat(i)²</h1>
+        <h4 id="sigla">Laboratorio Multidisciplinar Avançado de Tecnologia da Informação e Inovação</h4>
+      </div>
+      <div class="buttons-init">
+        <button class="sobre-bt">Sobre Nós</button>
+        <button class="projeto-bt">Projetos</button>
+      </div>
+      <div class="terminal">Terminal</div>
+    </div>
+
+    <!--Sobre o LabMatii-->
+    <div class="about" id="about">
+      <h2><img src="assets/Aberto.png">SOBRE NÓS<img src="assets/Fechado.png"></h2>
+      <p>O Laboratório Multidisciplinar Avançado de Tecnologia da Informação e Inovação (LabMat(i)²) é
+        um dos lugares dentro do Instituto Federal Catarinense - Campus Camboriú que fornece suporte
+        ao curso de Técnico em Informática do Campus desde 2003. O objetivo principal do laboratório
+        é agremiar alunos interessados nas áreas das ciências da informação, fornecendo suporte para o
+        desenvolvimento de projetos de pesquisa, ensino e extensão. </p>
+      <p>Sob direção do Professor Eng. José Luiz Ungericht Júnior, o LabMat(i)² tem como filosofia
+        auxiliar e agremiar os mais brilhantes alunos, no intuito de desenvolver as suas capacidades de
+        decisões, lideranças e conhecimentos técnicos. Além do viés de produção de conteúdo, como
+        projetos de pesquisa, o laboratório funciona como o cotidiano de uma empresa, com hierarquia,
+        departamentos e prazos, com o intuito de situar o estagiário em situações reais do mercado de
+        trabalho.</p>
+    </div>
+
+    <!--Projetos do LabMatii-->
+    <div class="projects">
+      <h2>Projetos</h2>
+
+      <div class="project" id="proj_1">
+        <img>
+        <h5>Texto Texto</h5>
+        <button>Saiba mais</button>
+      </div>
+
+      <div class="project" id="proj_2">
+        <img>
+        <h5>Texto Texto</h5>
+        <button>Saiba mais</button>
+      </div>
+
+      <div class="project"id="proj_3">
+        <img>
+        <h5>Texto Texto</h5>
+        <button>Saiba mais</button>
+      </div>
+    </div>
+
+    <!--Área das informações de contato-->
+    <div class="contact">
+
+      <div class="social-media"></div>
+      
+      <div class="contact-form">
+        <form name="contact">
+          <h1>CONTATO</h1>
+          
+          <input type="text" id="nomeid" placeholder="Nome" required="required" name="nome" />
+      
+          <input type="email" id="emailid" placeholder="Email" name="email" />
+          
+          <textarea placeholder="Mensagem"></textarea>
+          
+          <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        </form>
+      </div>
+
+    </div>
+    
+    <!--Rodapé-->
+    <div class="footer"></div>
+
+  </main>
+ 
 </body>
 </html>
